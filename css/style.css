@@ -11,14 +11,15 @@ body{
 
 .halaman-awal{
     display: grid;
-    grid-template-columns: 280px 1fr 320px;
+    grid-template-columns: 340px 0.85fr 360px;
     gap: 20px;
     padding: 20;
 }
 
 .sidebar-kiri{
-    border-right: 1px solid #eee;
+    border-right: none;
     padding-right: 20px;
+    padding-left: 90px;
 }
 
 .logo{
@@ -34,11 +35,12 @@ body{
 .menu-item{
     text-decoration: none;
     color: #222;
-    padding: 10px 12px;
+    padding: 10px 20px;
     border-radius: 12px;
     display: flex;
-    gap: 12px;
+    gap: 20px;
     align-items: center;
+    font-size: 20px;
 }
 
 .menu-item.aktif{
@@ -47,14 +49,15 @@ body{
 }
 
 .btn-posting{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
-    padding: 12px;
+    padding: 20px 15px;
     border-radius: 999px;
     border: none;
     background: #111;
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* Konten yg Tengah*/
@@ -62,13 +65,15 @@ body{
 .main-content{
     border-right: 1px solid #eee;
     border-left:  1px solid #eee;
-    padding: 0 20px;
+    padding: 0px;
 }
 
 .tabs{
     display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+    justify-content:space-around;
+    padding: 15px 50px 0px;
+    position: relative;
+    border-bottom: 1px solid #eee;
 }
 
 .tab{
@@ -88,7 +93,7 @@ body{
     display: flex;
     gap: 15px;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 10px;
     border-bottom: 1px solid #eee;
 }
 
@@ -112,6 +117,21 @@ body{
     border-radius: 999px;
     background: #6b6b6b;
     color: #fff;
+    cursor: pointer;
+}
+
+.show-more{
+    width: 100%;
+    border: 1px solid #eee;
+    font-size: 16px;
+    padding: 15px 0px;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.show-more:hover{
+    background: #eee;
 }
 
 .feed{
@@ -134,11 +154,12 @@ body{
     height: 44px;
     border-radius: 50%;
     background: #ccc;
+    cursor: pointer;
 }
 
 .post-user{
     display: flex;
-    flex-direction: column;
+    cursor: pointer;
 }
 
 .post-name{
@@ -147,7 +168,8 @@ body{
 }
 
 .post-handle{
-    font-size: 12px;
+    padding-left:5px;
+    font-size: 13px;
     color: #777;
 }
 
@@ -183,7 +205,7 @@ body{
 }
 
 .sidebar-kanan{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .search-box{
@@ -202,19 +224,42 @@ body{
     width: 100%;
 }
 
-.card{
+.subscribe-card{
   border: 1px solid #eee;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
 }
 
+.btn-subscribe{
+    margin-top: 20px;
+    width: 35%;
+    padding: 12px 0px;
+    border-radius: 999px;
+    border: none;
+    background: #2590e2;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card{
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+}
 
 .news-card .card-header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:10px;
+  padding: 20px 20px 10px;
+
 }
 
 .close{
@@ -223,8 +268,12 @@ body{
 }
 
 .news-item{
-  padding:10px 0;
+  padding: 10px 20px;
   border-bottom:1px solid #eee;
+}
+
+.news-item:hover{
+    background: #eee;
 }
 
 .news-item:last-child{
@@ -244,8 +293,13 @@ body{
 }
 
 .trend-item{
-  padding:10px 0;
-  border-bottom:1px solid #eee;
+  padding: 10px 20px;
+  border: #fff;
+  text-align: start;
+}
+
+.trend-item:hover{
+    background: #eee;
 }
 
 .trend-item:last-child{
@@ -255,15 +309,19 @@ body{
 .trend-info{
   font-size:12px;
   color:#777;
-  display:block;
+  display:flex;
   margin-bottom:2px;
 }
 
-.follow-item{
+.follow.item{
   display:flex;
   align-items:center;
   gap:10px;
-  margin-top:12px;
+  padding: 10px 20px;
+}
+
+.follow.item:hover{
+    background: #eee;
 }
 
 .follow-info span{
@@ -282,10 +340,13 @@ body{
   cursor:pointer;
 }
 
-
-
-
-
+.following-btn{
+     width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 15px 0px;
+    align-items: center;
+}
 
 
 
