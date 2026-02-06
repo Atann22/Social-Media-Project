@@ -16,48 +16,48 @@
                 <img src="../img/logo.png" alt="logo">
             </div>
             <nav class="menu">
-                <a href="#" class="menu-item aktif">
-                    <span class="icon" style="padding-right: 20px;">🏠</span>
+                <a href="#" class="menu-item">
+                    <img class="logo_sidebar" src="../img/home_logo.png" alt="logo">
                     <span class="text">Home</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🔍</span>
+                    <img class="logo_sidebar" src="../img/search_logo.png" alt="logo">
                     <span class="text">Explore</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🔔</span>
+                    <img class="logo_sidebar" src="../img/notification_logo.png" alt="logo">
                     <span class="text">Notifications</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">👤</span>
+                    <img class="logo_sidebar" src="../img/friend_logo.png" alt="logo">
                     <span class="text">Follow</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">✉️</span>
+                    <img class="logo_sidebar" src="../img/message_logo.png" alt="logo">
                     <span class="text">Chat</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🏠</span>
+                    <img class="logo_sidebar" src="../img/grok_logo.png" alt="logo">
                     <span class="text">Grok</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🏠</span>
+                    <img class="logo_sidebar" src="../img/bookmarks_logo.png" alt="logo">
                     <span class="text">Bookmarks</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🏠</span>
+                   <img class="logo_sidebar" src="../img/creator_logo.png" alt="logo">
                     <span class="text">Creator Studio</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🏠</span>
+                    <img class="logo_sidebar" src="../img/premium_logo.png" alt="logo">
                     <span class="text">Premium</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🏠</span>
+                    <img class="logo_sidebar" src="../img/profile_logo.png" alt="logo">
                     <span class="text">Profile</span>
                 </a>
                 <a href="#" class="menu-item">
-                    <span class="icon" style="padding-right: 20px;">🏠</span>
+                    <img class="logo_sidebar" src="../img/logo.png" alt="logo">
                     <span class="text">More</span>
                 </a>
              </nav>
@@ -68,9 +68,15 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="tabs">
-                <button class="tab aktif">For You</button>
-                <button class="tab">Following</button>
-            </div>
+                <input type="radio" name="tab" id="for-you" checked>
+                <label for="for-you" class="tab">For You</label>
+
+                <input type="radio" name="tab" id="following">
+                <label for="following" class="tab">Following</label>
+
+                <span class="indicator"></span>
+                </div>
+
             <div class="post-box">
                 <div class="avatar"></div>
                 <input type="text" placeholder="What's happening?"/>

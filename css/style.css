@@ -33,29 +33,41 @@ body{
 }
 
 .menu-item{
+    display: flex;
     text-decoration: none;
     color: #222;
     padding: 15px;
     border-radius: 12px;
-    gap: 100px;
+    gap: 10px;
     align-items: center;
     font-size: 20px;
 }
 
-.menu-item.aktif{
-    background: #f0f8ff;
+.menu-item:hover{
+    background: #eee;
     font-weight: 700;
+}
+
+.logo_sidebar{
+    display: flex;
+    width: 60px;
+    height: 100%;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
 }
 
 .btn-posting{
     margin-top: 20px;
     width: 100%;
-    padding: 20px 15px;
+    padding: 15px 15px;
     border-radius: 999px;
+    font-size: 16px;
     border: none;
     background: #111;
     color: #fff;
-    font-weight: 700;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -68,25 +80,59 @@ body{
     margin-left: 5px;
 }
 
-.tabs{
-    display: flex;
-    justify-content:space-around;
-    padding: 15px 50px 0px;
-    position: relative;
-    border-bottom: 1px solid #eee;
+.tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
-.tab{
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    padding: 10px 20px;
-    cursor: pointer;
+/* sembunyikan radio */
+.tabs input {
+  display: none;
 }
 
-.tab.aktif{
-    border-bottom: 3px solid #1d9bf0;
-    font-weight: 700;
+.tab {
+  cursor: pointer;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  font-weight: 700;
+}
+
+/* garis biru */
+.indicator {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  width: 50px;
+  height: 3px;
+  background: #1d9bf0;
+  border-radius: 999px;
+  transition: 0.6s ease;
+}
+
+/* posisi indikator */
+#for-you:checked ~ .indicator {
+  transform: translateX(0);
+}
+
+#following:checked ~ .indicator {
+  transform: translateX(310px); /* sesuaikan jarak */
+}
+
+/* warna teks aktif */
+#for-you:checked + label,
+#following:checked + label {
+  color: #000;
+  font-weight: 600;
+}
+
+.tab:hover{
+    background-color: #eee;
 }
 
 .post-box{
