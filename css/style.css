@@ -141,6 +141,13 @@ body{
     align-items: center;
     padding: 10px 10px;
     border-bottom: 1px solid #eee;
+    flex-direction: column;
+}
+
+.post-top{
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .avatar{
@@ -152,9 +159,10 @@ body{
 
 .post-box input{
     flex: 1;
-    padding: 10px 12px;
-    border: 1px solid #ddd;
-    border-radius: 999px;
+    padding: 15px 12px;
+    border: none;
+    border-radius: 0px;
+    align-items: flex-end;
 }
 
 .post-input-footer{
@@ -197,13 +205,13 @@ body{
     background: #eee;
 }
 
-.feed{
-    margin-top:20px ;
-}
-
 .post-card{
     border-bottom: 1px solid #eee;
-    padding: 16px;
+    padding: 25px 16px;
+}
+
+.post-card:hover{
+  background: #eee;
 }
 
 .post-header{
@@ -221,17 +229,20 @@ body{
 }
 
 .post-user{
-    display: flex;
+    display: inline-flex;
     cursor: pointer;
+    align-items: center;
 }
 
 .post-name{
     font-weight: 700;
     font-size: 14px;
+    width: auto;
 }
 
 .post-handle{
-    padding-left:5px;
+    padding-left: 0;
+    margin-left: 5px;
     font-size: 13px;
     color: #777;
 }
@@ -259,12 +270,23 @@ body{
     justify-content: space-between;
     margin-top: 12px;
     gap: 20px;
+    padding-right: 10%;
 }
 
 .post-action{
     color: #777;
     font-size: 15px;
     cursor: pointer;
+    width: 7%;
+    text-align: center;
+    align-items: center;
+    padding-top: 1%;
+    height: 27px;
+}
+
+.post-action:hover{
+  background: #bbb;
+  border-radius: 100%;
 }
 
 .sidebar-kanan{
@@ -377,15 +399,25 @@ body{
   margin-bottom:2px;
 }
 
-.follow.item{
+.follow-item{
   display:flex;
   align-items:center;
-  gap:10px;
   padding: 10px 20px;
 }
 
-.follow.item:hover{
+.follow-avatar{
+    width: 20%;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.follow-item:hover{
     background: #eee;
+}
+
+.follow-info strong{
+  padding-left: 5%;
 }
 
 .follow-info span{
@@ -394,24 +426,17 @@ body{
 }
 
 .follow-btn{
-  margin-left:auto;
+  margin-left:1px 1px;
+  padding: 1px 1px;
   background:#111;
   color:#fff;
   border:none;
   border-radius:999px;
-  padding:6px 14px;
+  padding:10px 1px;
   font-weight:600;
   cursor:pointer;
+  width: 40%;
 }
-
-.following-btn{
-     width: 100%;
-    border: none;
-    font-size: 16px;
-    padding: 15px 0px;
-    align-items: center;
-}
-
 
 
 
