@@ -1,8 +1,6 @@
 *{
-    margin: 0;
+     margin: 0;
     padding: 0;
-    width: 100%;  
-    max-width: 1600px;
     box-sizing: border-box;
 }
 
@@ -12,15 +10,19 @@ body{
 }
 
 .halaman-awal{
+    max-width: 1300px;
+    margin: auto;
     display: grid;
-    grid-template-columns: 450px 0.8fr 360px;
+    grid-template-columns: 280px 1fr 350px;
     gap: 20px;
 }
 
 .sidebar-kiri{
     border-right: none;
-    padding-right: 20px;
-    padding-left: 190px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
 }
 
 .logo{
@@ -126,11 +128,10 @@ body{
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 0px;
   border-bottom: 1px solid #eee;
 }
 
-/* sembunyikan radio */
 .tabs input {
   display: none;
 }
@@ -148,7 +149,7 @@ body{
 .indicator {
   position: absolute;
   bottom: 0;
-  left: 120px;
+  left: 130px;
   width: 50px;
   height: 3px;
   background: #1d9bf0;
@@ -162,7 +163,7 @@ body{
 }
 
 #following:checked ~ .indicator {
-  transform: translateX(310px); /* sesuaikan jarak */
+  transform: translateX(310px); 
 }
 
 /* warna teks aktif */
@@ -236,8 +237,8 @@ body{
     background: #6b6b6b;
     color: #fff;
     cursor: pointer;
-    margin-left: 220px;
-    width: 20%;
+    margin-left: auto;
+    width: auto;
 }
 
 .show-more{
@@ -245,6 +246,7 @@ body{
     border: 1px solid #eee;
     font-size: 16px;
     padding: 15px 0px;
+    color: #1d9bf0;
     align-items: center;
     cursor: pointer;
     background-color: #fff;
@@ -257,6 +259,7 @@ body{
 .post-card{
     border-bottom: 1px solid #eee;
     padding: 25px 16px;
+    cursor: pointer;
 }
 
 .post-card:hover{
@@ -331,7 +334,7 @@ body{
 .post-footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 14px;
     gap: 20px;
     padding-right: 10%;
 }
@@ -340,11 +343,11 @@ body{
     color: #777;
     font-size: 15px;
     cursor: pointer;
-    width: 7%;
+    width: auto;
     text-align: center;
     align-items: center;
-    padding-top: 1%;
-    height: 27px;
+    height: 31px;
+    padding: 6px 10px;
 }
 
 .post-action:hover{
@@ -352,8 +355,14 @@ body{
   border-radius: 100%;
 }
 
+/*SIDEBAR KANAN*/
+
 .sidebar-kanan{
     padding: 10px 0 0 10px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
 
 }
 
@@ -466,10 +475,11 @@ body{
   display:flex;
   align-items:center;
   padding: 10px 20px;
+  gap: 10px;
 }
 
 .follow-avatar{
-    width: 20%;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     background: #ccc;
@@ -490,46 +500,98 @@ body{
 .follow-info{
     display: flex;
     flex-direction: column;
-}
-
-.follow-info strong{
-  padding-left: 5%;
+    margin-left: 10px;
 }
 
 .follow-info span{
   font-size:13px;
   color:#777;
-  padding-left: 5%;
 }
 
 .follow-btn{
-  margin-left:1px 1px;
-  padding: 1px 1px;
+  margin-left:auto;
+  padding: 8px 16px;
   background:#111;
   color:#fff;
   border:none;
   border-radius:999px;
-  padding:10px 1px;
   font-weight:600;
   cursor:pointer;
   width: 40%;
 }
 
+@media (max-width: 1200px) {
+    .halaman-awal{
+        grid-template-columns: 240px 1fr;
+    }
 
+    .sidebar-kanan{
+        display: none;
+    }
+}
 
+.mobile-nav{
+    display: none;
+}
 
+@media (max-width: 768px) {
 
+    .halaman-awal{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 
+    .sidebar-kiri{
+        display: none;
+    }
 
+    .main-content{
+        border: none;
+    }
 
+    .post-media{
+        height: 220px;
+    }
 
+    .post-footer{
+        padding-right: 0;
+    }
 
+    .post-action{
+        padding: 6px;
+    }
 
+    .mobile-nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 22px;
+    }
+    body{
+        padding-bottom: 60px;
+    }
+}
 
+img{
+    max-width: 100%;
+    height: auto;
+}
 
+button, .menu-item, .follow-item, .trend-item, .news-item, .post-card, .tab {
+    transition: all 0.8s ease;
+}
 
+.main-content{
+    box-shadow: 0 0 10px rgba(0,0,0,0.03);
+}
 
-
-
-
-
+.header{
+    background: linear-gradient(135deg, #1d9bf0, #0d8ddb);
+}
