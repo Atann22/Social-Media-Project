@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tampilan X</title>
-
-    <link rel="stylesheet" href="css/style.css";>
+    <title>explore - cloning x</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="halaman-awal">
@@ -78,144 +77,80 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <div class="tabs">
-                <input type="radio" name="tab" id="for-you" checked>
-                <label for="for-you" class="tab">For you</label>
-
-                <input type="radio" name="tab" id="following">
-                <label for="following" class="tab">Following</label>
-
-                <span class="indicator"></span>
+            <div class="explore-search-container">
+                <div class="explore-search-box">
+                🔍
+                <input type="text" placeholder="Search"/>
                 </div>
 
-            <div class="post-box">
-                <div class="post-top">
-                    <div class="avatar">
-                        <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <input type="text" placeholder="What's happening?" style="font-size: 18px;"/>
-                </div>
-                <div class="post-input-footer">
-                    <div class="post-input-action">🖼️</div>
-                    <div class="post-input-action">GIF</div>
-                    <div class="post-input-action">❤️</div>
-                    <div class="post-input-action">📈</div>
-                    <div class="post-input-action">😊</div>
-                    <div class="post-input-action">📷</div>
-                    <div class="post-input-action">📍</div>
-                    <button class="btn-post">Post</button>
-                </div>
-            </div>
-            <div>
-                <button class="show-more">Show 100 Posts</button>
+                <img src="img\explore-setting.png" style="cursor: pointer;">
             </div>
 
-            <!-- Feed konten -->
+            <div class="explore-tabs">
+                <a href="explore.html" class="explore-tab active">For you</a>
+                <a href="explore-trending.html" class="explore-tab">Trending</a>
+                <a href="explore-news.html" class="explore-tab">News</a>
+                <a href="explore-sports.html" class="explore-tab">Sports</a>
+                <a href="explore-entertainment.html" class="explore-tab">Entertainment</a>
+            </div>
 
-        <div class="feed">
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">ZakyArkan</div>
-                        <div class="post-handle">@Jakann</div>
-                    </div>
+
+                <div class="ads-trending-explore">
+                         <img src="img\explore-trending-ads.png"alt="post image">
                 </div>
 
-                <div class="post-body">
-                    <p>2KA21 Finally goes to puncak</p>
 
-                    <div class="post-media">
-                        <img src="img/postingan1.jpeg" alt="post image">
-                    </div>
+            <div class="explore-card explore-news-card">
+
+            <button class="explore-card">
+                <div class="explore-trend-item" style="margin-top: 5px;">
+                    <span class="explore-trend-info">1 · Only on X · Trending</span>
+                    <strong>#BukberKorbanBencana</strong>
                 </div>
-
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">2 · Only on X · Trending</span>
+                    <strong>Jembatan Akses Kebaikan</strong>
                 </div>
-            </article>
-
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar2.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">AbhinayaAF</div>
-                        <div class="post-handle">@Bhii</div>
-                    </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">3 · Only on X · Trending</span>
+                    <strong>Ramadhan</strong>
                 </div>
-
-                <div class="post-body">
-                    <p>A random picture in gacoan after our second met for studied</p>
-
-                    <div class="post-media">
-                         <img src="img/postingan2.jpeg" style="object-position: 10% center;" alt="post image">
-                    </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">4 · Music · Trending</span>
+                    <strong>#GetReadyForRUDE</strong>
                 </div>
-
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">5 · Trending in Indonesia</span>
+                    <strong>#WarTakjilAmanda</strong>
                 </div>
-            </article>
-
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">ZakyArkan</div>
-                        <div class="post-handle">@Jakann</div>
-                    </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">6 · Trending in Indonesia</span>
+                    <strong>#gerakcepatdpr</strong>
                 </div>
-
-                <div class="post-body">
-                    <p>Taking a pause where the air feels lighter and the mind slows down.</p>
-
-                    <div class="post-media">
-                        <img src="img/postingan3.jpeg" alt="post image">
-                    </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">7 · Trending in Indonesia</span>
+                    <strong>#GrabThumbsUpxปอนด์ภูวินทร์</strong>
                 </div>
-
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">8 · Trending in Indonesia</span>
+                    <strong>GRABFOOD X PONDPHUWIN</strong>
                 </div>
-            </article>
-        </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">9 · Trending in Indonesia</span>
+                    <strong>GRABFOOD X PONDPHUWIN</strong>
+                </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">10 · Trending in Indonesia</span>
+                    <strong>Sahur</strong>
+                </div>
+                <div class="explore-trend-item">
+                    <strong style="font-size: 16px;">Show More</strong>
+                </div>
+            </div>
         </main>
-
         <!--SIDEBAR KANAN-->
 
         <aside class="sidebar-kanan">
-            
-            <div class="search-box">
-             🔍
-            <input type="text" placeholder="Search"/>
-            </div>
-
-            <div class="subscribe-card">
-                <h3>Subscribe to Premium</h3>
-                <p style="padding-top: 10px; font-size: 14px;">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
-                <button class="btn-subscribe">Subscribe</button>
-            </div>
 
             <!--Today's News-->
             <div class="card news-card">

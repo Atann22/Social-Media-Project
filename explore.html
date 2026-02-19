@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tampilan X</title>
-
-    <link rel="stylesheet" href="css/style.css";>
+    <title>explore - cloning x</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="halaman-awal">
@@ -78,144 +77,81 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <div class="tabs">
-                <input type="radio" name="tab" id="for-you" checked>
-                <label for="for-you" class="tab">For you</label>
-
-                <input type="radio" name="tab" id="following">
-                <label for="following" class="tab">Following</label>
-
-                <span class="indicator"></span>
+            <div class="explore-search-container">
+                <div class="explore-search-box">
+                🔍
+                <input type="text" placeholder="Search"/>
                 </div>
 
-            <div class="post-box">
-                <div class="post-top">
-                    <div class="avatar">
-                        <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <input type="text" placeholder="What's happening?" style="font-size: 18px;"/>
-                </div>
-                <div class="post-input-footer">
-                    <div class="post-input-action">🖼️</div>
-                    <div class="post-input-action">GIF</div>
-                    <div class="post-input-action">❤️</div>
-                    <div class="post-input-action">📈</div>
-                    <div class="post-input-action">😊</div>
-                    <div class="post-input-action">📷</div>
-                    <div class="post-input-action">📍</div>
-                    <button class="btn-post">Post</button>
-                </div>
-            </div>
-            <div>
-                <button class="show-more">Show 100 Posts</button>
+                <img src="img\explore-setting.png" style="cursor: pointer;">
             </div>
 
-            <!-- Feed konten -->
+            <div class="explore-tabs">
+                <a href="explore.html" class="explore-tab active">For you</a>
+                <a href="explore-trending.html" class="explore-tab">Trending</a>
+                <a href="explore-news.html" class="explore-tab">News</a>
+                <a href="explore-sports.html" class="explore-tab">Sports</a>
+                <a href="explore-entertainment.html" class="explore-tab">Entertainment</a>
+            </div>
 
-        <div class="feed">
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">ZakyArkan</div>
-                        <div class="post-handle">@Jakann</div>
-                    </div>
+
+                <div class="ads-explore">
+                         <img src="img\explore-ads.png" style="object-position: 10% center;" alt="post image">
                 </div>
 
-                <div class="post-body">
-                    <p>2KA21 Finally goes to puncak</p>
 
-                    <div class="post-media">
-                        <img src="img/postingan1.jpeg" alt="post image">
+            <div class="explore-card explore-news-card">
+                <div class="explore-card-header">
+                <h3>Today's News</h3>
+                </div>
+
+                <div class="explore-news-item">
+                    <div class="explore-news-title">
+                        Ahmad Sahroni Reinstated as Deputy Chairman After
+                        <br> Protest Suspension
                     </div>
+                    <div class="explore-news-meta">1 day ago · Other · 19k posts</div>
                 </div>
-
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar2.jpeg" alt="post image">
+                <div class="explore-news-item">
+                    <div class="explore-news-title">
+                        Hearts2Hearts Unveils Playful 'RUDE!' Teasers with Carmen's Pink
+                        <br> Hair Debut
                     </div>
-                    <div class="post-user">
-                        <div class="post-name">AbhinayaAF</div>
-                        <div class="post-handle">@Bhii</div>
+                    <div class="explore-news-meta">1 day ago · Entertainment · 219.4K posts</div>
+                </div>
+                <div class="explore-news-item" style="margin-bottom: 5px;">
+                    <div class="explore-news-title">
+                        SEVENTEEN's DK and Vernon Celebrate Birthdays with Cake-
+                        <br>Smashing Chaos
                     </div>
+                    <div class="explore-news-meta">1 day ago · Other · 325k posts</div>
                 </div>
+            </div>
 
-                <div class="post-body">
-                    <p>A random picture in gacoan after our second met for studied</p>
-
-                    <div class="post-media">
-                         <img src="img/postingan2.jpeg" style="object-position: 10% center;" alt="post image">
-                    </div>
+            <button class="explore-card">
+                <div class="explore-trend-item" style="margin-top: 5px;">
+                    <span class="explore-trend-info">Trending In Indonesia</span>
+                    <strong>#Mokel Ketauan Tetangga</strong>
                 </div>
-
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">Trending In Indonesia</span>
+                    <strong>Waktu Maghrib</strong>
                 </div>
-            </article>
-
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">ZakyArkan</div>
-                        <div class="post-handle">@Jakann</div>
-                    </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">Trending In Indonesia</span>
+                    <strong>LPDP</strong>
                 </div>
-
-                <div class="post-body">
-                    <p>Taking a pause where the air feels lighter and the mind slows down.</p>
-
-                    <div class="post-media">
-                        <img src="img/postingan3.jpeg" alt="post image">
-                    </div>
+                <div class="explore-trend-item">
+                    <span class="explore-trend-info">Only on X · Trending</span>
+                    <strong>Jeffrey Eipstein</strong>
                 </div>
-
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
+                <div class="explore-trend-item">
+                    <strong style="font-size: 16px; color: rgb(92, 154, 211);">Show More</strong>
                 </div>
-            </article>
-        </div>
         </main>
-
         <!--SIDEBAR KANAN-->
 
         <aside class="sidebar-kanan">
-            
-            <div class="search-box">
-             🔍
-            <input type="text" placeholder="Search"/>
-            </div>
-
-            <div class="subscribe-card">
-                <h3>Subscribe to Premium</h3>
-                <p style="padding-top: 10px; font-size: 14px;">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
-                <button class="btn-subscribe">Subscribe</button>
-            </div>
 
             <!--Today's News-->
             <div class="card news-card">
@@ -243,30 +179,6 @@
                     <div class="news-info">3 hours ago · News · 2,775 posts</div>
                 </div>
             </div>
-
-            <!--TREND-->
-            <button class="card">
-                <h3 style="text-align: start; cursor: text; padding: 20px ;">What's Happening</h3>
-
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>#LULALAHFAH</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>Perang Dunia III</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>Perang Dunia III</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>Perang Dunia III</strong>
-                </div>
-                <div class="trend-item">
-                    <strong>Show More</strong>
-                </div>
                 
             </button>
 
@@ -315,7 +227,7 @@
                     <button class="follow-btn">Follow</button>
                 </div>
                 <div class="trend-item">
-                    <strong>Show More</strong>
+                    <strong style="color: rgb(92, 154, 211);">Show More</strong>
                 </div>
             </div>
         </aside>
