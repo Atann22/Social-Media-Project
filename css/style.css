@@ -760,3 +760,59 @@ button, .menu-item, .follow-item, .trend-item, .news-item, .post-card, .tab {
   border: #fff;
   text-align: start;
 }
+
+
+.main-follow-item{
+  display:flex;
+  align-items:center;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.main-follow-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.main-follow-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: flex;
+}
+
+.main-follow-item:hover{
+    background: #eee;
+}
+
+.main-follow-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.main-follow-info span{
+  font-size:13px;
+  color:#777;
+  margin-top: 3px;
+}
+
+.main-follow-btn{
+  margin-left:auto;
+  padding: 8px 16px;
+  background:#111;
+  color:#fff;
+  border:none;
+  border-radius:999px;
+  font-weight:600;
+  cursor:pointer;
+  width: 13%;
+}
+
+.main-follow-info p{
+    font-size:15px;
+  margin-top: 3px;
+}
