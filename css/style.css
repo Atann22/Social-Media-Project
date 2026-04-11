@@ -17,10 +17,10 @@ body{
     gap: 20px;
 }
 
-.sidebar-kiri{
+/* .sidebar-kiri{
     border-right: none;
     padding: 0 20px;
-}
+} */
 
 .logo{
     width: 65px;
@@ -48,7 +48,7 @@ body{
 
 .logo_sidebar{
     display: flex;
-    width: 50px;
+    /* width: 50px; */
     height: 30px;
     padding-right: 20px;
     justify-content: center;
