@@ -1,211 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tampilan X</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet" href="css/style.css";>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tampilan X</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css";>
 </head>
-<body>
-    <div class="halaman-awal">
 
-        <!--Side bar yg Kiri-->
-        <aside class="py-0 px-5">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
-            <nav class="menu">
-                <a href="index.html" class="menu-item">
-                    <img class="w-[40px] h-[25px] flex pr-[8px] justify-center items-center rounded-full" src="img/home_logo.png" alt="logo">
-                    <span class="text">Home</span>
-                </a>
-                <a href="explore.html" class="menu-item">
-                    <img class="w-[40px] h-[25px] flex pr-[8px] justify-center items-center rounded-full" src="img/search_logo.png" alt="logo">
-                    <span class="text">Explore</span>
-                </a>
-                <a href="notifications.html" class="menu-item">
-                    <img class="w-[40px]" src="img/notification_logo.png" alt="logo">
-                    <span class="text">Notifications</span>
-                </a>
-                <a href="follow.html" class="menu-item">
-                    <img class="w-[40px]" src="img/friend_logo.png" alt="logo">
-                    <span class="text">Follow</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="w-[40px]" src="img/message_logo.png" alt="logo">
-                    <span class="text">Chat</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="w-[40px]" src="img/grok_logo.png" alt="logo">
-                    <span class="text">Grok</span>
-                </a>
-                <a href="bookmarks.html" class="menu-item">
-                    <img class="w-[35px]" src="img/bookmarks_logo.png" alt="logo">
-                    <span class="text">Bookmarks</span>
-                </a>
-                <a href="#" class="menu-item">
-                   <img class="w-[40px]" src="img/creator_logo.png" alt="logo">
-                    <span class="text">Creator Studio</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="w-[40px]" src="img/premium_logo.png" alt="logo">
-                    <span class="text">Premium</span>
-                </a>
-                <a href="profile.html" class="menu-item">
-                    <img class="w-[40px]" src="img/profile_logo.png" alt="logo">
-                    <span class="text">Profile</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="w-[40px]" src="img/logo.png" alt="logo">
-                    <span class="text">More</span>
-                </a>
-             </nav>
+<body class="bg-white font-sans">
 
-             <button class="btn-posting">Post</button>
+<div class="max-w-[1300px] mx-auto grid grid-cols-[265px_1fr_390px] gap-5 max-[1200px]:grid-cols-[240px_1fr] max-[1200px]:gap-0 max-[768px]:grid-cols-1">
 
-             <div class="profile">
-             <div class="profile-item">
-                    <div class="profile-avatar">
-                        <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="profile-info">
-                        <strong>ZakyArkan</strong>
-                        <span>@Jakann</span>
-                    </div>
-             </div>       
-        </aside>
+  <!-- bagian sidebar kiri-->
+  <aside class="px-5 py-0 max-[768px]:hidden">
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="tabs">
-                <input type="radio" name="tab" id="for-you" checked>
-                <label for="for-you" class="tab">For you</label>
+    <div class="w-[65px]">
+      <img src="img/logo.png" />
+    </div>
 
-                <input type="radio" name="tab" id="following">
-                <label for="following" class="tab">Following</label>
+    <nav class="flex flex-col mt-4">
 
-                <span class="indicator"></span>
-                </div>
+      <!-- menu items nya -->
+      <a class="flex items-center text-[20px] text-[#222] no-underline p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="index.html">
+        <img src="img/home_logo.png" class="w-[40px] h-[25px] pr-2" />
+        <span>Home</span>
+      </a>
 
-            <div class="post-box">
-                <div class="post-top">
-                    <div class="avatar">
-                        <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <input type="text" placeholder="What's happening?" style="font-size: 18px;"/>
-                </div>
-                <div class="post-input-footer">
-                    <div class="post-input-action">🖼️</div>
-                    <div class="post-input-action">GIF</div>
-                    <div class="post-input-action">❤️</div>
-                    <div class="post-input-action">📈</div>
-                    <div class="post-input-action">😊</div>
-                    <div class="post-input-action">📷</div>
-                    <div class="post-input-action">📍</div>
-                    <button class="btn-post">Post</button>
-                </div>
-            </div>
-            <div>
-                <button class="show-more">Show 100 Posts</button>
-            </div>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="explore.html">
+        <img src="img/search_logo.png" class="w-[40px] pr-2" />
+        <span>Explore</span>
+      </a>
 
-            <!-- Feed konten -->
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+        <img src="img/notification_logo.png" class="w-[40px] pr-2" />
+        <span>Notifications</span>
+      </a>
 
-        <div class="feed">
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">ZakyArkan</div>
-                        <div class="post-handle">@Jakann</div>
-                    </div>
-                </div>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+        <img src="img/friend_logo.png" class="w-[40px] pr-2" />
+        <span>Follow</span>
+      </a>
 
-                <div class="post-body">
-                    <p>2KA21 Finally goes to puncak</p>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+        <img src="img/message_logo.png" class="w-[40px] pr-2" />
+        <span>Chat</span>
+      </a>
 
-                    <div class="post-media">
-                        <img src="img/postingan1.jpeg" alt="post image">
-                    </div>
-                </div>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+        <img src="img/grok_logo.png" class="w-[40px] pr-2" />
+        <span>Grok</span>
+      </a>
 
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
-                </div>
-            </article>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+        <img src="img/bookmarks_logo.png" class="w-[35px] pr-2" />
+        <span>Bookmarks</span>
+      </a>
 
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar2.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">AbhinayaAF</div>
-                        <div class="post-handle">@Bhii</div>
-                    </div>
-                </div>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+        <img src="img/creator_logo.png" class="w-[40px] pr-2" />
+        <span>Creator Studio</span>
+      </a>
 
-                <div class="post-body">
-                    <p>A random picture in gacoan after our second met for studied</p>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+        <img src="img/premium_logo.png" class="w-[40px] pr-2" />
+        <span>Premium</span>
+      </a>
 
-                    <div class="post-media">
-                         <img src="img/postingan2.jpeg" style="object-position: 10% center;" alt="post image">
-                    </div>
-                </div>
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="profile.html">
+        <img src="img/profile_logo.png" class="w-[40px] pr-2" />
+        <span>Profile</span>
+      </a>
 
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
-                </div>
-            </article>
+    </nav>
 
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="post-avatar">
-                         <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="post-user">
-                        <div class="post-name">ZakyArkan</div>
-                        <div class="post-handle">@Jakann</div>
-                    </div>
-                </div>
+    <button class="mt-5 w-full py-3 rounded-full bg-black text-white font-bold hover:opacity-80">
+      Post
+    </button>
 
-                <div class="post-body">
-                    <p>Taking a pause where the air feels lighter and the mind slows down.</p>
+    <div class="flex items-center mt-[20%] w-full p-3 px-6 hover:bg-[#eee] rounded-xl">
+      <div class="w-[44px] h-[44px] rounded-full overflow-hidden bg-gray-300">
+        <img src="img/avatar1.jpeg" class="w-full h-full object-cover" />
+      </div>
 
-                    <div class="post-media">
-                        <img src="img/postingan3.jpeg" alt="post image">
-                    </div>
-                </div>
+      <div class="ml-3 flex flex-col">
+        <strong>ZakyArkan</strong>
+        <span class="text-sm text-gray-500">@Jakann</span>
+      </div>
+    </div>
 
-                <div class="post-footer">
-                    <div class="post-action">💬</div>
-                    <div class="post-action">🔁</div>
-                    <div class="post-action">❤️</div>
-                    <div class="post-action">📈</div>
-                    <div class="post-action">🔖</div>
-                    <div class="post-action">⬆️</div>
-                </div>
-            </article>
+  </aside>
+
+  <!-- main content -->
+  <main class="border-x border-gray-200 shadow-sm  max-[768px]:border-0">
+
+    <!-- tabs nya -->
+    <div class="grid grid-cols-2 border-b border-gray-200 relative">
+      <input type="radio" name="tab" id="for-you" checked class="hidden">
+      <label for="for-you" class="text-center py-5 font-bold cursor-pointer hover:bg-gray-100">For you</label>
+
+      <input type="radio" name="tab" id="following" class="hidden">
+      <label for="following" class="text-center py-5 font-bold cursor-pointer hover:bg-gray-100">Following</label>
+    </div>
+
+    <!-- post box -->
+    <div class="p-3 border-b border-gray-200">
+      <div class="flex gap-3 items-center">
+        <div class="w-11 h-11 rounded-full overflow-hidden bg-gray-300">
+          <img src="img/avatar1.jpeg" class="w-full h-full object-cover" />
         </div>
-        </main>
 
-        <!--SIDEBAR KANAN-->
+        <input type="text" placeholder="What's happening?"
+          class="flex-1 p-3 text-lg border-none outline-none" />
+      </div>
 
-        <aside class="sidebar-kanan">
+      <div class="flex items-center mt-3 gap-2 text-gray-500 text-sm">
+        <span>🖼️</span><span>GIF</span><span>❤️</span><span>📈</span>
+        <span>😊</span><span>📷</span><span>📍</span>
+
+        <button class="ml-auto px-6 py-2 bg-gray-500 text-white rounded-full">
+          Post
+        </button>
+      </div>
+    </div>
+
+    <button class="w-full py-4 text-blue-500 border-b border-gray-200 hover:bg-gray-100">
+      Show 100 Posts
+    </button>
+
+    <!-- cover -->
+    <div>
+
+      <!-- Post an nya -->
+      <article class="p-6 border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full overflow-hidden bg-gray-300">
+            <img src="img/avatar1.jpeg" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="flex items-center">
+            <strong>ZakyArkan</strong>
+            <span class="text-gray-500 text-sm ml-2">@Jakann</span>
+          </div>
+        </div>
+
+        <p class="mt-3">2KA21 Finally goes to puncak</p>
+
+        <div class="mt-3 rounded-xl overflow-hidden h-[320px]">
+          <img src="img/postingan1.jpeg" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex justify-between mt-4 text-gray-500">
+          <span>💬</span><span>🔁</span><span>❤️</span>
+          <span>📈</span><span>🔖</span><span>⬆️</span>
+        </div>
+
+      </article>
+
+      <div>
+
+      <article class="p-6 border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full overflow-hidden bg-gray-300">
+            <img src="img/avatar1.jpeg" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="flex items-center">
+            <strong>ZakyArkan</strong>
+            <span class="text-gray-500 text-sm ml-2">@Jakann</span>
+          </div>
+        </div>
+
+        <p class="mt-3">2KA21 Finally goes to puncak</p>
+
+        <div class="mt-3 rounded-xl overflow-hidden h-[320px]">
+          <img src="img/postingan1.jpeg" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex justify-between mt-4 text-gray-500">
+          <span>💬</span><span>🔁</span><span>❤️</span>
+          <span>📈</span><span>🔖</span><span>⬆️</span>
+        </div>
+
+      </article>
+      
+      <div>
+
+      <article class="p-6 border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full overflow-hidden bg-gray-300">
+            <img src="img/avatar1.jpeg" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="flex items-center">
+            <strong>ZakyArkan</strong>
+            <span class="text-gray-500 text-sm ml-2">@Jakann</span>
+          </div>
+        </div>
+
+        <p class="mt-3">2KA21 Finally goes to puncak</p>
+
+        <div class="mt-3 rounded-xl overflow-hidden h-[320px]">
+          <img src="img/postingan1.jpeg" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex justify-between mt-4 text-gray-500">
+          <span>💬</span><span>🔁</span><span>❤️</span>
+          <span>📈</span><span>🔖</span><span>⬆️</span>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Bagian sidebar kanan -->
+  <aside class="sidebar-kanan">
             
             <div class="search-box">
              🔍
@@ -218,7 +232,7 @@
                 <button class="btn-subscribe">Subscribe</button>
             </div>
 
-            <!--Today's News-->
+            <!-- todays news-->
             <div class="card news-card">
                 <div class="card-header">
                 <h3 style="cursor: text;">Today's News</h3>
@@ -245,7 +259,7 @@
                 </div>
             </div>
 
-            <!--TREND-->
+            <!-- trend -->
             <button class="card">
                 <h3 style="text-align: start; cursor: text; padding: 20px ;">What's Happening</h3>
 
@@ -321,13 +335,16 @@
             </div>
         </aside>
 
-        <div class="mobile-nav">
-    <span>🏠</span>
-    <span>🔍</span>
-    <span>➕</span>
-    <span>❤️</span>
-    <span>👤</span>
-    </div>
-    </div>
+</div>
+
+<!-- mobile nav tambahan -->
+<div class="hidden max-[768px]:flex fixed bottom-0 left-0 w-full h-[60px] border-t bg-white justify-around items-center text-xl">
+  <span>🏠</span>
+  <span>🔍</span>
+  <span>➕</span>
+  <span>❤️</span>
+  <span>👤</span>
+</div>
+
 </body>
 </html>
