@@ -32,12 +32,12 @@
         <span>Explore</span>
       </a>
 
-      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="notifications.html">
         <img src="img/notification_logo.png" class="w-[40px] pr-2" />
         <span>Notifications</span>
       </a>
 
-      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="follow.html">
         <img src="img/friend_logo.png" class="w-[40px] pr-2" />
         <span>Follow</span>
       </a>
@@ -52,7 +52,7 @@
         <span>Grok</span>
       </a>
 
-      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="#">
+      <a class="flex items-center text-[20px] p-3 rounded-xl hover:bg-[#eee] hover:font-bold" href="bookmarks.html">
         <img src="img/bookmarks_logo.png" class="w-[35px] pr-2" />
         <span>Bookmarks</span>
       </a>
@@ -218,126 +218,124 @@
 
   </main>
 
-  <!-- Bagian sidebar kanan -->
-  <aside class="sidebar-kanan">
-            
-            <div class="search-box">
-             🔍
-            <input type="text" placeholder="Search"/>
-            </div>
+  <!--sidebar kanan -->
+  <aside class="p-3 max-[1200px]:hidden">
 
-            <div class="subscribe-card">
-                <h3>Subscribe to Premium</h3>
-                <p style="padding-top: 10px; font-size: 14px;">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
-                <button class="btn-subscribe">Subscribe</button>
-            </div>
+    <!-- Ssearch -->
+    <div class="flex items-center gap-3 border border-gray-300 rounded-full px-4 py-2 mb-5">
+      🔍
+      <input class="w-full outline-none" placeholder="Search" />
+    </div>
 
-            <!-- todays news-->
-            <div class="card news-card">
-                <div class="card-header">
-                <h3 style="cursor: text;">Today's News</h3>
-                <span class="close-btn">✕</span>
-                </div>
+    <!-- subscribe -->
+    <div class="border border-gray-200 rounded-xl p-4 mb-5">
+      <h3 class="font-bold">Subscribe to Premium</h3>
+      <p class="text-sm mt-2 text-gray-600">
+        Subscribe to unlock new features
+      </p>
 
-                <div class="news-item">
-                    <div class="news-title">
-                        Super Junior's Kyuhyun Celebrates 38th Birthday with Fan and Bandmate Love
-                    </div>
-                    <div class="news-info">6 hours ago · Entertainment · 4,183 posts</div>
-                </div>
-                <div class="news-item">
-                    <div class="news-title">
-                        Billie Eilish and Bad Bunny Use Grammy Speeches for Immigration Activism
-                    </div>
-                    <div class="news-info">9 hours ago · Entertainment · 210.6K posts</div>
-                </div>
-                <div class="news-item">
-                    <div class="news-title">
-                        False Drain Emergency Call Triggers Thorough Cleanup in Meerut
-                    </div>
-                    <div class="news-info">3 hours ago · News · 2,775 posts</div>
-                </div>
-            </div>
+      <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-full font-bold">
+        Subscribe
+      </button>
+    </div>
 
-            <!-- trend -->
-            <button class="card">
-                <h3 style="text-align: start; cursor: text; padding: 20px ;">What's Happening</h3>
+    <!-- news -->
+    <div class="border border-gray-200 rounded-xl mb-5">
+      <div class="flex justify-between p-4">
+        <h3>Today's News</h3>
+        <span>✕</span>
+      </div>
 
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>#LULALAHFAH</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>Perang Dunia III</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>Perang Dunia III</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>Perang Dunia III</strong>
-                </div>
-                <div class="trend-item">
-                    <strong style="color: rgb(92, 154, 211);">Show More</strong>
-                </div>
-                
-            </button>
+      <div class="p-3 border-t hover:bg-gray-100 cursor-pointer">
+        <p class="font-semibold text-sm">Super Junior Kyuhyun...</p>
+        <p class="text-xs">6 hours ago · Entertainment · 4,183 posts</p>
+      </div>
 
-            <!--rekomendasi follow-->
-            <div class="card">
-                <h3 style="text-align: start; cursor: text; padding: 20px ;">Who to Follow</h3>
+      <div class="p-3 border-t hover:bg-gray-100 cursor-pointer">
+        <p class="font-semibold text-sm">Billie Eilish and Bad Bunny Use Grammy Speeches for Immigration Activism</p>
+        <p class="text-xs">9 hours ago · Entertainment · 210.6K posts</p>
+      </div>
 
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_prabowo.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>Prabowo_S</strong>
-                        <span>@monokotil</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_gibran.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>fufufafa</strong>
-                        <span>@Gibran_R</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_jarsip.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>jarsip</strong>
-                        <span>@zahrahsyifa</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_padya.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>padya</strong>
-                        <span>@fadya</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="trend-item">
-                    <strong style="color: rgb(92, 154, 211);">Show More</strong>
-                </div>
-            </div>
-        </aside>
+      <div class="p-3 border-t hover:bg-gray-100 cursor-pointer">
+        <p class="font-semibold text-sm">False Drain Emergency Call Triggers Thorough Cleanup in Meerut</p>
+        <p class="text-xs">3 hours ago · News · 2,775 posts</p>
+      </div>
+    </div>
+
+    <!-- trend -->
+    <div class="border border-gray-200 rounded-xl">
+      <h3 class="p-4 font-bold">What's Happening</h3>
+      <div class="p-3 hover:bg-gray-100 cursor-pointer">
+        <p class="text-gray-500 text-sm">Trending in Indonesia</p>
+        <strong>#LULALAHFAH</strong>
+      </div>
+
+      <div class="p-3 hover:bg-gray-100 cursor-pointer">
+        <p class="text-gray-500 text-sm">Trending in Indonesia</p>
+        <strong>Perang Dunia III</strong>
+      </div>
+
+      <div class="p-3 hover:bg-gray-100 cursor-pointer">
+        <p class="text-gray-500 text-sm">Trending in Indonesia</p>
+        <strong>#FHUI</strong>
+      </div>
+
+      <div class="px-5 py-3 text-blue-500 hover:bg-gray-100 cursor-pointer">
+        Show More
+      </div>
+    </div>
+
+    <!--follow-->
+
+    <div class="border border-gray-200 rounded-xl bg-white">
+
+      <h3 class="p-5 font-bold">Who to Follow</h3>
+
+      <div class="flex items-center px-5 py-3 hover:bg-gray-100">
+        <img src="img/pp_prabowo.jpeg" class="w-10 h-10 rounded-full">
+        <div class="ml-3 flex-1">
+          <strong>Prabowo_S</strong>
+          <div class="text-sm text-gray-500">@monokotil</div>
+        </div>
+        <button class="bg-black text-white px-3 py-1 rounded-full text-sm">Follow</button>
+      </div>
+
+      <div class="flex items-center px-5 py-3 hover:bg-gray-100">
+        <img src="img/pp_gibran.jpeg" class="w-10 h-10 rounded-full">
+        <div class="ml-3 flex-1">
+          <strong>fufufafa</strong>
+          <div class="text-sm text-gray-500">@Gibran_R</div>
+        </div>
+        <button class="bg-black text-white px-3 py-1 rounded-full text-sm">Follow</button>
+      </div>
+
+      <div class="flex items-center px-5 py-3 hover:bg-gray-100">
+        <img src="img/pp_gibran.jpeg" class="w-10 h-10 rounded-full">
+        <div class="ml-3 flex-1">
+          <strong>jarsip</strong>
+          <div class="text-sm text-gray-500">@zahrahsyifa</div>
+        </div>
+        <button class="bg-black text-white px-3 py-1 rounded-full text-sm">Follow</button>
+      </div>
+
+      <div class="flex items-center px-5 py-3 hover:bg-gray-100">
+        <img src="img/pp_gibran.jpeg" class="w-10 h-10 rounded-full">
+        <div class="ml-3 flex-1">
+          <strong>padya</strong>
+          <div class="text-sm text-gray-500">@fadya</div>
+        </div>
+        <button class="bg-black text-white px-3 py-1 rounded-full text-sm">Follow</button>
+      </div>
+
+      <div class="px-5 py-3 text-blue-500 hover:bg-gray-100 cursor-pointer">
+        Show More
+      </div>
+    
+  </aside>
 
 </div>
 
-<!-- mobile nav tambahan -->
+<!-- MOBILE NAV -->
 <div class="hidden max-[768px]:flex fixed bottom-0 left-0 w-full h-[60px] border-t bg-white justify-around items-center text-xl">
   <span>🏠</span>
   <span>🔍</span>
