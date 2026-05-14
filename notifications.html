@@ -1,192 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>explore - cloning x</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore - Cloning X</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="halaman-awal">
 
-        <!--Side bar yg Kiri-->
-        <aside class="sidebar-kiri">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
-            <nav class="menu">
-                <a href="index.html" class="menu-item">
-                    <img class="logo_sidebar" src="img/home_logo.png" alt="logo">
-                    <span class="text">Home</span>
-                </a>
-                <a href="explore.html" class="menu-item">
-                    <img class="logo_sidebar" src="img/search_logo.png" alt="logo">
-                    <span class="text">Explore</span>
-                </a>
-                <a href="notifications.html" class="menu-item">
-                    <img class="logo_sidebar" src="img/notification_logo.png" alt="logo">
-                    <span class="text">Notifications</span>
-                </a>
-                <a href="follow.html" class="menu-item">
-                    <img class="logo_sidebar" src="img/friend_logo.png" alt="logo">
-                    <span class="text">Follow</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="logo_sidebar" src="img/message_logo.png" alt="logo">
-                    <span class="text">Chat</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="logo_sidebar" src="img/grok_logo.png" alt="logo">
-                    <span class="text">Grok</span>
-                </a>
-                <a href="bookmarks.html" class="menu-item">
-                    <img class="logo_sidebar" src="img/bookmarks_logo.png" alt="logo">
-                    <span class="text">Bookmarks</span>
-                </a>
-                <a href="#" class="menu-item">
-                   <img class="logo_sidebar" src="img/creator_logo.png" alt="logo">
-                    <span class="text">Creator Studio</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="logo_sidebar" src="img/premium_logo.png" alt="logo">
-                    <span class="text">Premium</span>
-                </a>
-                <a href="profile.html" class="menu-item">
-                    <img class="logo_sidebar" src="img/profile_logo.png" alt="logo">
-                    <span class="text">Profile</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <img class="logo_sidebar" src="img/logo.png" alt="logo">
-                    <span class="text">More</span>
-                </a>
-             </nav>
+<body class="font-sans bg-white">
 
-             <button class="btn-posting">Post</button>
+<div class="max-w-[1300px] mx-auto grid grid-cols-[265px_1fr_390px] gap-5
+            max-[1200px]:grid-cols-[240px_1fr]
+            max-[768px]:grid-cols-1 max-[768px]:gap-0">
 
-             <div class="profile">
-             <div class="profile-item">
-                    <div class="profile-avatar">
-                        <img src="img/avatar1.jpeg" alt="post image">
-                    </div>
-                    <div class="profile-info">
-                        <strong>ZakyArkan</strong>
-                        <span>@Jakann</span>
-                    </div>
-             </div>       
-        </aside>
+  <!-- ================= SIDEBAR KIRI ================= -->
+  <aside class="px-5 py-0 max-[768px]:hidden">
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="card-header" style="margin: 15px; padding-left: 15px;">
-                <h3 style="cursor: text;">Notifications</h3>
-            </div>
-
-            <div class="tabs">
-                <input type="radio" name="tab" id="for-you" checked>
-                <label for="for-you" class="tab">All</label>
-
-                <input type="radio" name="tab" id="following">
-                <label for="following" class="tab">Mentions</label>
-
-                <span class="indicator"></span>
-            </div>
-
-            <h1 style="text-align: left; padding: 50px 140px 0 ;">Nothing to see here — yet</h1>
-            <p style="text-align: left; padding: 10px 150px;">When someone mentions you, you’ll find it here.</p>
-        </main>
-        <!--SIDEBAR KANAN-->
-
-        <aside class="sidebar-kanan">
-            <div class="search-box">
-             🔍
-            <input type="text" placeholder="Search"/>
-            </div>
-
-            <!--Today's News-->
-            <button class="card">
-                <h3 style="text-align: start; cursor: text; padding: 20px ;">What's Happening</h3>
-
-                <div class="trend-item">
-                     <span class="trend-info">BTS · Trending</span>
-                    <strong>#PleaseDontChange</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>#berlombaberbagikebaikan</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In Indonesia</span>
-                    <strong>#herlinaketarketireps167</strong>
-                </div>
-                <div class="trend-item">
-                    <span class="trend-info">Trending In World</span>
-                    <strong>#RAMADHANKAREEM</strong>
-                </div>
-                <div class="trend-item">
-                    <strong style="color: rgb(92, 154, 211);">Show More</strong>
-                </div>
-                
-            </button>
-                
-        
-
-            <!--rekomendasi follow-->
-            <div class="card">
-                <h3 style="text-align: start; cursor: text; padding: 20px ;">Who to Follow</h3>
-
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_prabowo.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>Prabowo_S</strong>
-                        <span>@monokotil</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_gibran.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>fufufafa</strong>
-                        <span>@Gibran_R</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_jarsip.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>jarsip</strong>
-                        <span>@zahrahsyifa</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="follow-item">
-                    <div class="follow-avatar">
-                        <img src="img/pp_padya.jpeg" alt="post image">
-                    </div>
-                    <div class="follow-info">
-                        <strong>padya</strong>
-                        <span>@fadya</span>
-                    </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                <div class="trend-item">
-                    <strong style="color: rgb(92, 154, 211);">Show More</strong>
-                </div>
-            </div>
-        </aside>
-
-        <div class="mobile-nav">
-    <span>🏠</span>
-    <span>🔍</span>
-    <span>➕</span>
-    <span>❤️</span>
-    <span>👤</span>
+    <!-- LOGO -->
+    <div class="w-[65px]">
+      <img src="img/logo.png" alt="logo">
     </div>
+
+    <!-- MENU -->
+    <nav class="flex flex-col mt-2">
+
+      <a href="index.html"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/home_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Home</span>
+      </a>
+
+      <a href="explore.html"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300 font-bold">
+        <img src="img/search_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Explore</span>
+      </a>
+
+      <a href="notifications.html"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/notification_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Notifications</span>
+      </a>
+
+      <a href="follow.html"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/friend_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Follow</span>
+      </a>
+
+      <a href="#"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/message_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Chat</span>
+      </a>
+
+      <a href="#"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/grok_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Grok</span>
+      </a>
+
+      <a href="bookmarks.html"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/bookmarks_logo.png" class="w-[35px] h-[30px] pr-2">
+        <span>Bookmarks</span>
+      </a>
+
+      <a href="#"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/creator_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Creator Studio</span>
+      </a>
+
+      <a href="#"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/premium_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Premium</span>
+      </a>
+
+      <a href="profile.html"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/profile_logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>Profile</span>
+      </a>
+
+      <a href="#"
+        class="flex items-center text-[20px] text-[#222] p-3 rounded-xl hover:bg-[#eee] transition-all duration-300">
+        <img src="img/logo.png" class="w-[40px] h-[30px] pr-2">
+        <span>More</span>
+      </a>
+
+    </nav>
+
+    <!-- BUTTON -->
+    <button
+      class="mt-5 w-full py-[15px] rounded-full bg-[#111] text-white font-bold text-[16px] hover:opacity-80 transition-all duration-300">
+      Post
+    </button>
+
+    <!-- PROFILE -->
+    <div class="flex items-center mt-[20%] w-full px-6 py-3 hover:bg-[#eee] rounded-xl transition-all duration-300">
+
+      <div class="w-[44px] h-[44px] rounded-full overflow-hidden bg-gray-300">
+        <img src="img/avatar1.jpeg" class="w-full h-full object-cover">
+      </div>
+
+      <div class="ml-3 flex flex-col">
+        <strong>ZakyArkan</strong>
+        <span class="text-[13px] text-gray-500">@Jakann</span>
+      </div>
+
     </div>
+
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="border-x border-gray-200 shadow-sm max-[768px]:border-0">
+
+    <!-- HEADER -->
+    <div class="m-[15px] pl-[15px]">
+      <h3 class="font-bold text-[20px]">Notifications</h3>
+    </div>
+
+    <!-- TABS -->
+    <div class="relative grid grid-cols-2 border-b border-gray-200">
+
+      <input type="radio" name="tab" id="for-you" checked class="hidden">
+      <label for="for-you"
+        class="cursor-pointer py-5 text-center text-[15px] font-bold hover:bg-[#eee] transition-all duration-300">
+        All
+      </label>
+
+      <input type="radio" name="tab" id="following" class="hidden">
+      <label for="following"
+        class="cursor-pointer py-5 text-center text-[15px] font-bold hover:bg-[#eee] transition-all duration-300">
+        Mentions
+      </label>
+
+      <!-- INDICATOR -->
+      <span class="absolute bottom-0 left-[145px] w-[50px] h-[3px] bg-[#1d9bf0] rounded-full"></span>
+
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="pt-[50px] pl-[140px]">
+
+      <h1 class="text-[31px] font-bold">
+        Nothing to see here — yet
+      </h1>
+
+      <p class="pt-[10px] text-gray-500 text-[15px]">
+        When someone mentions you, you’ll find it here.
+      </p>
+
+    </div>
+
+  </main>
+
+  <!-- ================= SIDEBAR KANAN ================= -->
+  <aside class="pt-[10px] max-[1200px]:hidden">
+
+    <!-- SEARCH -->
+    <div class="flex items-center gap-3 border border-gray-300 rounded-full px-[14px] py-[10px] mb-5">
+
+      <span>🔍</span>
+
+      <input type="text"
+        placeholder="Search"
+        class="w-full outline-none">
+
+    </div>
+
+    <!-- TREND CARD -->
+    <div class="border border-gray-200 rounded-xl mb-5 bg-white overflow-hidden">
+
+      <h3 class="text-start font-bold p-5 text-[20px]">
+        What's Happening
+      </h3>
+
+      <!-- ITEM -->
+      <div class="px-5 py-3 hover:bg-[#eee] transition-all duration-300 cursor-pointer">
+        <span class="text-[12px] text-gray-500 block">
+          BTS · Trending
+        </span>
+        <strong>#PleaseDontChange</strong>
+      </div>
+
+      <div class="px-5 py-3 hover:bg-[#eee] transition-all duration-300 cursor-pointer">
+        <span class="text-[12px] text-gray-500 block">
+          Trending In Indonesia
+        </span>
+        <strong>#berlombaberbagikebaikan</strong>
+      </div>
+
+      <div class="px-5 py-3 hover:bg-[#eee] transition-all duration-300 cursor-pointer">
+        <span class="text-[12px] text-gray-500 block">
+          Trending In Indonesia
+        </span>
+        <strong>#herlinaketarketireps167</strong>
+      </div>
+
+      <div class="px-5 py-3 hover:bg-[#eee] transition-all duration-300 cursor-pointer">
+        <span class="text-[12px] text-gray-500 block">
+          Trending In World
+        </span>
+        <strong>#RAMADHANKAREEM</strong>
+      </div>
+
+      <div class="px-5 py-3 hover:bg-[#eee] transition-all duration-300 cursor-pointer">
+        <strong class="text-[#5c9ad3]">Show More</strong>
+      </div>
+
+    </div>
+
+    <!-- FOLLOW CARD -->
+    <div class="border border-gray-200 rounded-xl bg-white overflow-hidden">
+
+      <h3 class="text-start font-bold p-5 text-[20px]">
+        Who to Follow
+      </h3>
+
+      <!-- FOLLOW ITEM -->
+      <div class="flex items-center px-5 py-3 gap-3 hover:bg-[#eee] transition-all duration-300">
+
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+          <img src="img/pp_prabowo.jpeg" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col">
+          <strong>Prabowo_S</strong>
+          <span class="text-[13px] text-gray-500">@monokotil</span>
+        </div>
+
+        <button
+          class="ml-auto bg-[#111] text-white px-4 py-2 rounded-full font-semibold text-sm">
+          Follow
+        </button>
+
+      </div>
+
+      <!-- FOLLOW ITEM -->
+      <div class="flex items-center px-5 py-3 gap-3 hover:bg-[#eee] transition-all duration-300">
+
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+          <img src="img/pp_gibran.jpeg" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col">
+          <strong>fufufafa</strong>
+          <span class="text-[13px] text-gray-500">@Gibran_R</span>
+        </div>
+
+        <button
+          class="ml-auto bg-[#111] text-white px-4 py-2 rounded-full font-semibold text-sm">
+          Follow
+        </button>
+
+      </div>
+
+      <!-- FOLLOW ITEM -->
+      <div class="flex items-center px-5 py-3 gap-3 hover:bg-[#eee] transition-all duration-300">
+
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+          <img src="img/pp_jarsip.jpeg" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col">
+          <strong>jarsip</strong>
+          <span class="text-[13px] text-gray-500">@zahrahsyifa</span>
+        </div>
+
+        <button
+          class="ml-auto bg-[#111] text-white px-4 py-2 rounded-full font-semibold text-sm">
+          Follow
+        </button>
+
+      </div>
+
+      <!-- FOLLOW ITEM -->
+      <div class="flex items-center px-5 py-3 gap-3 hover:bg-[#eee] transition-all duration-300">
+
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+          <img src="img/pp_padya.jpeg" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col">
+          <strong>padya</strong>
+          <span class="text-[13px] text-gray-500">@fadya</span>
+        </div>
+
+        <button
+          class="ml-auto bg-[#111] text-white px-4 py-2 rounded-full font-semibold text-sm">
+          Follow
+        </button>
+
+      </div>
+
+      <!-- SHOW MORE -->
+      <div class="px-5 py-3 hover:bg-[#eee] transition-all duration-300 cursor-pointer">
+        <strong class="text-[#5c9ad3]">Show More</strong>
+      </div>
+
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- ================= MOBILE NAV ================= -->
+<div class="hidden max-[768px]:fixed max-[768px]:bottom-0 max-[768px]:left-0
+            max-[768px]:w-full max-[768px]:h-[60px]
+            max-[768px]:bg-white max-[768px]:border-t
+            max-[768px]:flex max-[768px]:justify-around
+            max-[768px]:items-center max-[768px]:text-[22px]">
+
+  <span>🏠</span>
+  <span>🔍</span>
+  <span>➕</span>
+  <span>❤️</span>
+  <span>👤</span>
+
+</div>
+
 </body>
 </html>
